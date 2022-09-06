@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* font-size: 25px; */
+    text-shadow: 1px 1px 3px black;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+.box-main{
+    width: 500px;
+    /* height: 120px; */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 20px; */
+}
+
+
+#resistor {
+    background-image: url('../img/resister.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+    border: 1px solid green;
+}
+
+
+#color-one{
+    border: 1px solid blue;
+    width: 15px;
+    height: 87px;
+}
+.box-resistor-color{
+    /* border: 1px solid aqua; */
+    width: 130px;
+    position: relative;
+    left: 140px;
+    top: 46px;
+}
+.box-resistor-color-four{
+    /* border: 1px solid aqua; */
+    width: 32px;
+    position: relative;
+    left: 329px;
+    top: -40px;
+}
