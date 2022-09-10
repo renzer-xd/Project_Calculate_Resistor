@@ -1,101 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project Calculate Resistor</title>
+</head>
 
-    <body>
-
-        <div class="box-main" style="border: 1px solid red;">
-            <div class="row justify-content-center">
-                <div id="resistor" class="col-2">
-                    <div class="container">
-                        <div class="row g-1 box-resistor-color">
-                            <div class="col-4">
-                                <div id="color-one"></div>
-                            </div>
-                            <div class="col-4">
-                                <div id="color-two"></div>
-                            </div>
-                            <div class="col-4">
-                                <div id="color-thee"></div>
-                            </div>
+<body>
+    <h1 id="head">โปรเจคเว็บคำนวณค่าความต้านทาน</h1>
+    <div class="box-main">
+        <div class="row justify-content-center">
+            <div id="resistor" class="col-2">
+                <div class="container">
+                    <div class="row g-1 box-resistor-color">
+                        <div class="col-4">
+                            <div id="color-one"></div>
                         </div>
-                        <div class="row box-resistor-color-four">
-                            <div class="col-2 ">
-                                <div id="color-four"></div>
-                            </div>
+                        <div class="col-4">
+                            <div id="color-two"></div>
+                        </div>
+                        <div class="col-4">
+                            <div id="color-thee"></div>
+                        </div>
+                    </div>
+                    <div class="row box-resistor-color-four">
+                        <div class="col-2 ">
+                            <div id="color-four"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-3">
-                        <select class="form-select" id="select-color1" aria-label="Default select example">
-                            <option selected>สีที่ 1</option>
-                            <option value="0">ดำ</option>
-                            <option value="1">น้ำตาล</option>
-                            <option value="2">แดง</option>
-                            <option value="3">ส้ม</option>
-                            <option value="4">เหลือง</option>
-                            <option value="5">เขียว</option>
-                            <option value="6">น้ำเงิน</option>
-                            <option value="7">ม่วง</option>
-                            <option value="8">เทา</option>
-                            <option value="9">ขาว</option>
-                        </select>
-                    </div>
-                    <div class="col-3">
-                        <select class="form-select" id="select-color2" aria-label="Default select example">
-                            <option selected>สีที่ 2</option>
-                            <option value="0">ดำ</option>
-                            <option value="1">น้ำตาล</option>
-                            <option value="2">แดง</option>
-                            <option value="3">ส้ม</option>
-                            <option value="4">เหลือง</option>
-                            <option value="5">เขียว</option>
-                            <option value="6">น้ำเงิน</option>
-                            <option value="7">ม่วง</option>
-                            <option value="8">เทา</option>
-                            <option value="9">ขาว</option>
-                        </select>
-                    </div>
-                    <div class="col-3">
-                        <select class="form-select" id="select-color3" aria-label="Default select example">
-                            <option selected>สีที่ 3</option>
-                            <option value="0">ดำ</option>
-                            <option value="1">น้ำตาล</option>
-                            <option value="2">แดง</option>
-                            <option value="3">ส้ม</option>
-                            <option value="4">เหลือง</option>
-                            <option value="5">เขียว</option>
-                            <option value="6">น้ำเงิน</option>
-                            <option value="7">ม่วง</option>
-                            <option value="8">เทา</option>
-                            <option value="9">ขาว</option>
-                        </select>
-                    </div>
-                    <div class="col-3">
-                        <select class="form-select" id="select-color4" aria-label="Default select example">
-                            <option selected>ค่า +-</option>
-                            <option value="10">ทอง</option>
-                            <option value="11">เงิน</option>
-                        </select>
-                    </div>
-                </div>
-               
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <select class="form-select" id="select-color1" aria-label="Default select example">
+                        <option selected>สีที่ 1</option>
+                        <option value="0">ดำ</option>
+                        <option value="1">น้ำตาล</option>
+                        <option value="2">แดง</option>
+                        <option value="3">ส้ม</option>
+                        <option value="4">เหลือง</option>
+                        <option value="5">เขียว</option>
+                        <option value="6">น้ำเงิน</option>
+                        <option value="7">ม่วง</option>
+                        <option value="8">เทา</option>
+                        <option value="9">ขาว</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select class="form-select" id="select-color2" aria-label="Default select example">
+                        <option selected>สีที่ 2</option>
+                        <option value="0">ดำ</option>
+                        <option value="1">น้ำตาล</option>
+                        <option value="2">แดง</option>
+                        <option value="3">ส้ม</option>
+                        <option value="4">เหลือง</option>
+                        <option value="5">เขียว</option>
+                        <option value="6">น้ำเงิน</option>
+                        <option value="7">ม่วง</option>
+                        <option value="8">เทา</option>
+                        <option value="9">ขาว</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select class="form-select" id="select-color3" aria-label="Default select example">
+                        <option selected>สีที่ 3</option>
+                        <option value="0">ดำ</option>
+                        <option value="1">น้ำตาล</option>
+                        <option value="2">แดง</option>
+                        <option value="3">ส้ม</option>
+                        <option value="4">เหลือง</option>
+                        <option value="5">เขียว</option>
+                        <option value="6">น้ำเงิน</option>
+                        <option value="7">ม่วง</option>
+                        <option value="8">เทา</option>
+                        <option value="9">ขาว</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <select class="form-select" id="select-color4" aria-label="Default select example">
+                        <option selected>ค่า +-</option>
+                        <option value="10">ทอง</option>
+                        <option value="11">เงิน</option>
+                    </select>
+                </div>
+            </div>
 
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row row-cols-lg-auto g-3 justify-content-center">
+                <div class="col-12">
+                    <input type="text" class="form-control" id="input-result" disabled value="ผลลัพธ์">
+                </div>
+                <div class="col-12">
+                    <button type="submit" id="submit" class="btn btn-success">Submit</button>
+                </div>
+                <div class="col-12">
+                    <button type="submit" id="reset" class="btn btn-warning" style="color: #fff;">Reset</button>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <script></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 
 </html>
