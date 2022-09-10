@@ -46,8 +46,8 @@ body {
 }
 
 
-#color-one{
-    border: 1px solid blue;
+#color-one,#color-two,#color-thee,#color-four{
+    /* border: 1px solid blue; */
     width: 15px;
     height: 87px;
 }
